@@ -1,0 +1,17 @@
+{
+  "name": "timealbum-shelby",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "services/*"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "dev:web": "npm --workspace apps/web run dev",
+    "dev:publisher": "npm --workspace services/publisher run dev",
+    "build:web": "npm --workspace apps/web run build",
+    "start:publisher": "npm --workspace services/publisher run start"
+  }
+}
